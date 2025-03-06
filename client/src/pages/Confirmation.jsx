@@ -1,7 +1,7 @@
 //* Confirmation page after user clicked Create Poll
 
 import React, { useState } from 'react';
-
+import NavBar from './NavBar';
 // allows for user to be redirect to another page (back to Dashboard)
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -42,6 +42,7 @@ function Confirmation() {
 
   return (
     <div>
+      
       <h1>Congrats, {username}</h1>
       <p>Your poll code is ready to be shared! </p>
       <p> {code} </p>

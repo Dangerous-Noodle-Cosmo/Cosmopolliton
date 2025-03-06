@@ -1,6 +1,7 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './HomePage.css';  
 import { useState, useRef } from 'react';
+import hotdog from '../assets/hotdog.jpg'
 
 function HomePage() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); 
@@ -203,22 +204,25 @@ const submitHandleButtonClick = async () => {
         </div>
       </section>
       {showVotingPopup && (
-        <div className="voting-popup">
-          <div className="popup-content">
+        // currently designated names for classes so we can edit in css
+
+        <div id="guest-popup">
+          <div id="guest-content">
             <h2>{pollName}</h2>
+            <img src={hotdog} alt="Description" width="300" />
             <p>Votes Remaining: {votesRemaining}</p>
             {pollTopics.map((topic, index) => (
-              <div key={index} className="poll-topic">
+              <div key={index} className="guest-topic">
                 <span>{topic.pollTopic}: {votes[index]} votes</span>
-                <div className="buttons">
+                <div id="add-delete-buttons">
                   <button onClick={() => addVote(index)}>🌭</button>
                   <button onClick={() => deleteVote(index)}>🗑️</button>
                 </div>
               </div>
             ))}
-            <div className="popup-buttons">
-              <button onClick={submitHandleButtonClick}>Submit Votes</button>
-              <button style = {{backgroundColor: 'red',color: 'black'}} onClick={closeVotingPopup}>Close</button>
+            <div id="guest-buttons">
+              <button onClick={submitHandleButtonClick}>Submit</button>
+              <button onClick={closeVotingPopup}>❌</button>
             </div>
           </div>
         </div>
