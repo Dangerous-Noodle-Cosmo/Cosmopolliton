@@ -145,14 +145,6 @@ function CreatePoll() {
       {/* onClick handler calls addTopics, createPolltHandleButtonClick*/}
       <button onClick={createPollHandleButtonClick}>Create Poll</button>
       {/* onClick handler redirects user back to Dashboard */}
-      <button
-        onClick={() =>
-          navigate('/dashboard', { state: { username: `${username}` } })
-        }
-      >
-        {' '}
-        Dashboard{' '}
-      </button>
     </div>
     </>
   );
