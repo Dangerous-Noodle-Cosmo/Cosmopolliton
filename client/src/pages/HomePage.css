@@ -1,0 +1,181 @@
+/* General Page Styling */
+
+/* Home Page Container */
+.home-page {
+  font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  padding: 30px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content */
+.content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f7e3e3; /* Ensures heading is visible */
+  text-shadow: 2px 2px 10px rgba(0, 170, 255, 0.7);
+}
+  
+
+
+.content p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  color: #dcdcdc; /* Light gray for readability */
+}
+
+/* Form Inputs */
+.inputs {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #cecccc; /* Ensures labels are visible */
+}
+.loginContainer {
+display: flex;
+}
+input {
+  width: 96%;
+  border: none;
+  border-radius: 8px;
+  background: #dacccc;
+  color: #040a0d;
+  font-size: 20px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+  color: #bbb; /* Lighter gray placeholder text */
+}
+
+input:focus {
+  background: #f2ecec;
+  border-left: 4px solid #00aaff;
+}
+
+/* Buttons */
+.card {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #9dc78e;
+}
+
+button {
+  flex: 1;
+  margin: 5px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #040a0d;
+  color: #fff;
+  border-radius: 8px;
+  background: #11653f;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:first-child {
+  background: #11653f;
+  color: #fff;
+  border: 3px solid #040a0d
+}
+
+button:first-child:hover {
+  border-color: #54965a;
+  background-color: #31363f;
+}
+
+button:last-child {
+  background: #11653f;
+  color: #fff;
+  ;
+  border: 3px solid #040a0d;
+}
+
+button:last-child:hover {
+  border-color: #54965a;
+  background-color: #31363f;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  margin-top: 20px;
+  display: flex;
+}
+
+.cta-btn {
+  background: #ff0077;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+  background: #cc0055;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .home-page {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Style for the buttons container */
+#add-delete-buttons {
+  display: flex;
+  gap: 8px; 
+  align-items: center;
+}
+
+
+#guest-buttons {
+  display: flex;
+  gap: 8px; /* Adds spacing between buttons */
+  justify-content: center; /* Centers the buttons */
+  margin-top: 10px;
+}
+
+/* Style for smaller buttons */
+#add-delete-buttons button,
+#guest-buttons button {
+  width: 50px; /* Smaller size */
+  height: 30px;
+  font-size: 14px; /* Smaller text */
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for specific button colors
+#guest-buttons button:nth-child(2) { 
+  background-color: red;
+  color: black;
+} */

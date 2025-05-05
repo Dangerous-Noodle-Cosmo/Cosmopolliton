@@ -1,14 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #cde8e5;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  flex-direction: column;
-}
+
 
 h1 {
   font-size: 36px;
@@ -120,7 +110,7 @@ button {
 }
 
 button:first-of-type {
-  background-color: #00879e;
+  background-color: #11653f;
   color: white;
 }
 
@@ -129,7 +119,7 @@ button:first-of-type:hover {
 }
 
 button:last-of-type {
-  background-color: #00879e;
+  background-color: #11653f;
   color: white;
 }
 
